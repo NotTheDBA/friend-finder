@@ -1,0 +1,29 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "A compatibility-based \"friend finder\" application writen in Node.js and Express.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotTheDBA/friend-finder.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "friends",
+    "compatability"
+  ],
+  "author": "R. S. Reitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NotTheDBA/friend-finder/issues"
+  },
+  "homepage": "https://github.com/NotTheDBA/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

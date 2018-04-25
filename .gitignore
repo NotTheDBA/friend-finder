@@ -1,3 +1,15 @@
+
+# Instructions
+.instructions
+
+# Environment configurations
+.DS_Store
+.vscode
+.code-workspace
+
+# dotenv environment variables file
+.env
+
 # Logs
 logs
 *.log
