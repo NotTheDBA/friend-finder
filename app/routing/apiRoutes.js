@@ -29,16 +29,16 @@ module.exports = function(app) {
     app.post("/api/friends/add", function(req, res) {
 
         var newFriend = req.body;
-        // console.log(newFriend);
-        // Using a RegEx Pattern to remove spaces from newfriend
-
+        
+        // Using a RegEx Pattern to remove spaces from the name for our username
         newFriend.userName = newFriend.name.replace(/\s+/g, "").toLowerCase();
-        // // console.log(newFriend.scores)
-        //convert our scores to numerics...
+        
+        // Convert our scores to numerics...
         newFriend.scores = newFriend.scores.map(function(x) {
             return parseInt(x, 10);
         });
 
+        // Run a match compare
         var bestFriends = [];
         var matchScore = 999;
         friendList.forEach(friend => {
@@ -46,11 +46,8 @@ module.exports = function(app) {
             for (i = 0; i < friend.scores.length; i++) {
                 newmatch += Math.abs(friend.scores[i] - newFriend.scores[i]);
             }
-            console.log("matchscore: " + newmatch);
-            // friend.scores.every(function(u, i) {
-            //     newmatch += Math.abs(u - newFriend.scores[i]);
-            //     // console.log("matchscore: " + newmatch);
-            // })
+            friend.MatchScore = 100-newmatch;
+
             if (newmatch < matchScore) {
                 bestFriends = [];
                 bestFriends.push(friend);
@@ -59,14 +56,10 @@ module.exports = function(app) {
                 bestFriends.push(friend);
             }
         });
-        // console.log("matchscore: " + matchScore);
-
-        console.log(bestFriends[0]);
-
-        // console.log(newFriend.scores)
+        
         friendList.push(newFriend);
 
-        // This doesn't play nice with the jQuery...
+        // This didn't play nice with the jQuery...
         // return res.redirect("/");
         res.end(res.json(bestFriends[0].userName));
 
