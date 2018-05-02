@@ -10,4 +10,8 @@ module.exports = function(app) {
         res.sendFile(path.join(appDir, "app/public/survey.html"))
     })
 
+    app.get("/view/", function(req, res) {
+        // console.log(req.params.friend);
+        res.sendFile(path.join(appDir, "app/public/view.html"))
+    })
 }

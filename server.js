@@ -12,7 +12,7 @@ require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
 // Set our listener for Heroku
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8081;
 app.listen(port, function() {
     // Log (server-side) when our server has started
     console.log("Server listening on: http://localhost:" + port);
