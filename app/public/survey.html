@@ -2,165 +2,156 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<!-- Latest compiled and minified CSS & JS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<title>Friend Finder - Survey</title>
+    <title>Friend Finder - Survey</title>
 </head>
 
 
 <body>
-<div class="container col-sm-12 col-md-6 ">
-<div class="jumbotron text-center">
-<h1>Friend Match</h1>
-<h3>Complete your Survey</h3>
-<hr>
-<a href="/"><button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home">Home</span></button></a>
-</div>
-<div class="row">
-<div>
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title"><strong>Friend Survey</strong></h3>
-<p>Please rate each question by how important or interesting it is to you.</p>
-</div>
-
-
-<form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Name">
+    <div class="container col-sm-12 col-md-6 ">
+        <div class="jumbotron text-center">
+            <h1>Friend Match</h1>
+            <h3>Complete your Survey</h3>
+            <hr>
+            <a href="/"><button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home">Home</span></button></a>
         </div>
-        <!-- <div class="form-group">
+        <div class="row">
+            <div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Friend Survey</strong></h3>
+                        <p>Please rate each question by how important or interesting it is to you.</p>
+                    </div>
+
+
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <!-- <div class="form-group">
           <label for="image">Avatar Image</label>
           <input type="text" class="form-control" id="image" placeholder="Image">
         </div> -->
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q1">#1</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q1" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q2">#2</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q2" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q3">#3</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q3" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q4">#4</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q4" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q5">#5</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q5" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q6">#6</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q6" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q7">#7</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q7" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q8">#8</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q8" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">First Question</p>
-            <div class="input-group">
-                <label class="input-title" for="q9">#9</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q9" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="form-group">
-            <p class="help-block">How important is it for your friend to be similar to you?</p>
-            <div class="input-group">
-                <label class="input-title" for="q10">#10</label>
-                <div class="input-group-addon">Not</div>
-                <input type="range" min=1 max=5 id="q10" class="form-control">
-                <div class="input-group-addon">Very</div>
-            </div>
-        </div>
-        <div class="text-left">
-            <button type="submit" class="btn btn-primary btn-md" id="submit-btn">Submit</button>
-        </div>
-    </form>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q1">#1:</label> How many social media accounts do you have?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">1 or None</div>
+                                <input type="range" min=1 max=5 id="q1" class="form-control">
+                                <div class="input-group-addon">5 or More</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q2">#2:</label> How Liberal / Conservative are you?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Very Liberal</div>
+                                <input type="range" min=1 max=5 id="q2" class="form-control">
+                                <div class="input-group-addon">Very Conservative</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q3">#3:</label> How much do you enjoy playing board games, cards, or other tabletop games?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Not at all</div>
+                                <input type="range" min=1 max=5 id="q3" class="form-control">
+                                <div class="input-group-addon">Very much</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q4">#4:</label> How religious/spiritual are you?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Not at all</div>
+                                <input type="range" min=1 max=5 id="q4" class="form-control">
+                                <div class="input-group-addon">Very</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q5">#5:</label> How much of a Foodie are you?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">I don't like food I don't know.</div>
+                                <input type="range" min=1 max=5 id="q5" class="form-control">
+                                <div class="input-group-addon">I'll eat anything!</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q6">#6:</label> How much do you read for fun.</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Who reads for fun?</div>
+                                <input type="range" min=1 max=5 id="q6" class="form-control">
+                                <div class="input-group-addon">I read at least a book a week.</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q7">#7:</label> How much music do you own?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">I only listen to the radio.</div>
+                                <input type="range" min=1 max=5 id="q7" class="form-control">
+                                <div class="input-group-addon">So much it would make your head spin!</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q8">#8:</label> Are you more likely to stay in or go out on a Friday night?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Always stay in</div>
+                                <input type="range" min=1 max=5 id="q8" class="form-control">
+                                <div class="input-group-addon">Always go out</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q9">#9:</label> How much do you discuss polarizing or controversial issues?</p>
+                            <p class="help-block"></p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Never discuss</div>
+                                <input type="range" min=1 max=5 id="q9" class="form-control">
+                                <div class="input-group-addon">Always discuss</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p><label class="input-title" for="q10">#10:</label> How important is it for your friend have similar interests and views as you?</p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Not at all</div>
+                                <input type="range" min=1 max=5 id="q10" class="form-control">
+                                <div class="input-group-addon">Very important</div>
+                            </div>
+                        </div>
+                        <div class="text-left">
+                            <button type="submit" class="btn btn-primary btn-md" id="submit-btn">Submit</button>
+                        </div>
+                    </form>
 
-    <script type="text/javascript">
-        // Post input when search button is clicked
-        $("#submit-btn").on("click", function(event) {
-            event.preventDefault();
-            var survey = [];
-            survey.push(parseInt($("#q1").val()));
-            survey.push(parseInt($("#q2").val()));
-            survey.push(parseInt($("#q3").val()));
-            survey.push(parseInt($("#q4").val()));
-            survey.push(parseInt($("#q5").val()));
-            survey.push(parseInt($("#q6").val()));
-            survey.push(parseInt($("#q7").val()));
-            survey.push(parseInt($("#q8").val()));
-            survey.push(parseInt($("#q9").val()));
-            survey.push(parseInt($("#q10").val()));
-            var newSurvey = {
-                name: $("#name").val().trim(),
-                scores: survey
-            };
-            console.log("survey.html", newSurvey);
-            // Post new client
-            $.post("/api/friends/add", newSurvey)
-            .then(function(data) {
-                console.log("survey.html", data);
-                window.location.replace("/view?friend=" + data);
-            });
-        });
-    </script>
+                    <script type="text/javascript">
+                        // Post input when search button is clicked
+                        $("#submit-btn").on("click", function(event) {
+                            event.preventDefault();
+                            var survey = [];
+                            survey.push(parseInt($("#q1").val()));
+                            survey.push(parseInt($("#q2").val()));
+                            survey.push(parseInt($("#q3").val()));
+                            survey.push(parseInt($("#q4").val()));
+                            survey.push(parseInt($("#q5").val()));
+                            survey.push(parseInt($("#q6").val()));
+                            survey.push(parseInt($("#q7").val()));
+                            survey.push(parseInt($("#q8").val()));
+                            survey.push(parseInt($("#q9").val()));
+                            survey.push(parseInt($("#q10").val()));
+                            var newSurvey = {
+                                name: $("#name").val().trim(),
+                                scores: survey
+                            };
+                            console.log("survey.html", newSurvey);
+                            // Post new client
+                            $.post("/api/friends/add", newSurvey)
+                                .then(function(data) {
+                                    console.log("survey.html", data);
+                                    window.location.replace("/view?friend=" + data);
+                                });
+                        });
+                    </script>
 </body>
 
 </html>
